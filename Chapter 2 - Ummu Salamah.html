@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script>
+        var angka1 = parseInt (prompt ('Angka pertama?'));
+        var angka2 = parseInt (prompt('Angka kedua?'));
+        var operasi = prompt('Pilih operasi matematika: tambah, kurang, bagi, kali, pangkat, min, max')
+
+        if (operasi == 'tambah') {
+            alert(angka1 + angka2)
+        } else if (operasi == 'kurang') {
+            alert(angka1 - angka2)
+        } else if (operasi == 'bagi') {
+            alert(angka1 / angka2)
+        } else if (operasi == 'kali') {
+            alert(angka1 * angka2)
+        } else if (operasi == 'pangkat') {
+            alert(Math.pow(angka1, angka2))
+        } else if (operasi == 'min') {
+            alert(Math.min(angka1, angka2))
+        } else if (operasi == 'max') {
+            alert(Math.max(angka1,angka2))
+        } else {
+            alert('not valid')
+        }
+        </script>
+
+    </body>
+</html>
